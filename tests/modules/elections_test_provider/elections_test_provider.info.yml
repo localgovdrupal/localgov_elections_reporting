@@ -1,0 +1,9 @@
+name: LocalGov Elections Reporting Test Provider
+description: Test Provider
+type: module
+package: Testing
+core_version_requirement: ^9 || ^10
+
+dependencies:
+  - drupal:localgov_elections_reporting
+
