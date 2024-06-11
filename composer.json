@@ -17,7 +17,8 @@
         "drupal/views_field_view": "^1.0@beta",
         "drupal/views_simple_math_field": "^3.0",
         "drupal/social_post": "^3.0",
-        "drupal/social_post_twitter": "^3.0"
+        "drupal/social_post_twitter": "^3.0",
+        "drupal/subpathauto": "^1.3"
     },
     "extra": {
         "enable-patching": true,
