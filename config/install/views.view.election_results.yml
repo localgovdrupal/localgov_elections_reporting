@@ -14,7 +14,7 @@ dependencies:
     - node.type.election
   module:
     - charts
-    - charts_highcharts
+    - charts_chartjs
     - entity_reference_revisions
     - localgov_elections_reporting
     - node
@@ -193,43 +193,24 @@ display:
         options:
           grouping: {  }
           chart_settings:
-            library: highcharts
+            library: chartjs
             type: bar
             fields:
-              label: field_candidate
+              label: ward_party
               stacking: false
               data_providers:
-                field_division:
+                ward_party:
                   enabled: false
-                  color: '#000000'
-                  weight: 5
-                field_election:
-                  enabled: false
-                  color: '#000000'
-                  weight: 5
-                field_party:
-                  enabled: false
-                  color: '#000000'
-                  weight: 5
-                field_candidate_forenames:
-                  enabled: false
-                  color: '#000000'
-                  weight: 7
-                field_candidate:
-                  enabled: false
-                  color: '#000000'
-                  weight: 5
-                field_votes:
+                  color: '#d8810f'
+                  weight: 2
+                field_winning_candidate:
                   enabled: true
-                  color: '#808080'
-                  weight: 5
-                field_party_colour:
-                  enabled: false
-                  color: '#000000'
-                  weight: 6
+                  color: '#0d233a'
+                  weight: 2
             display:
               title: ''
               title_position: out
+              subtitle: ''
               data_labels: true
               data_markers: false
               legend_position: ''
@@ -251,6 +232,7 @@ display:
                 yellow_to: '85'
                 red_from: '0'
                 red_to: '50'
+              color_changer: false
             xaxis:
               title: ''
               labels_rotation: '0'
@@ -1564,16 +1546,12 @@ display:
         options:
           grouping: {  }
           chart_settings:
-            library: highcharts
+            library: chartjs
             type: bar
             fields:
               label: field_abbreviation_1
               stacking: false
               data_providers:
-                field_party:
-                  enabled: false
-                  color: '#000000'
-                  weight: 2
                 field_abbreviation:
                   enabled: true
                   color: '#080808'
@@ -1585,6 +1563,7 @@ display:
             display:
               title: ''
               title_position: out
+              subtitle: ''
               data_labels: true
               data_markers: false
               legend_position: ''
@@ -1606,6 +1585,7 @@ display:
                 yellow_to: '85'
                 red_from: '0'
                 red_to: '50'
+              color_changer: false
             xaxis:
               title: ''
               labels_rotation: '0'

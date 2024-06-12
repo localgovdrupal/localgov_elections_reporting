@@ -16,7 +16,8 @@ dependencies:
   - drupal:toolbar
   - drupal:taxonomy
   - drupal:views
-  - drupal:charts
+  - charts:charts
+  - charts:charts_chartjs
   - drupal:color_field
   - drupal:leaflet
   - drupal:geofield
@@ -24,6 +25,5 @@ dependencies:
   - drupal:paragraphs_table
   - drupal:leaflet_views
   - drupal:views_field_view
-  - drupal:charts_highcharts
   - drupal:geocoder_field
   - drupal:geocoder_geofield
