@@ -2,7 +2,9 @@
   font-family: sans-serif;
   font-weight: bold;
 }
-.view-election-results-timeline .ward-candidate-results, .views-field-ward-candidates-party {
+
+.view-election-results-timeline .ward-candidate-results,
+.views-field-ward-candidates-party {
   vertical-align: top;
 }
 

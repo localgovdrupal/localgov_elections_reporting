@@ -13,7 +13,8 @@
   column-gap: 0.25rem;
 }
 
-.views-field-field-electorate .field-content, .views-field-election-turnout .field-content {
+.views-field-field-electorate .field-content,
+.views-field-election-turnout .field-content {
   font-weight: bold;
 }
 
