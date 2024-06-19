@@ -8,7 +8,7 @@
     attach: function (context, settings) {
 
       const boxes = once('allBoxes', '.box', context);
-      if (boxes) {
+      if (boxes && boxes.length > 0) {
         const box = boxes[0];
         let classList = box.className.split(/\s+/);
         classList.forEach(i => {
