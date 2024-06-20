@@ -1,0 +1,43 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: b642d283-9860-4ac2-a584-7fb96b03f070
+  bundle: party
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'Green Party'
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1
+  field_abbreviation:
+    -
+      value: GP
+  field_party_colour:
+    -
+      color: '#00643B'
+      opacity: 0.0
+  field_political_party_uri:
+    -
+      uri: 'https://www.greenparty.org.uk/'
+      title: ''
+      options: {  }
+  field_text_colour:
+    -
+      color: '#FFFFFF'
+      opacity: 0.0

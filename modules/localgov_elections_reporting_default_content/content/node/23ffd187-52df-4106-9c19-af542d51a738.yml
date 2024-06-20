@@ -1,0 +1,56 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 23ffd187-52df-4106-9c19-af542d51a738
+  bundle: election
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'General Election July 2024'
+  created:
+    -
+      value: 1718806214
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /election/general-election-july-2024
+      langcode: en
+      pathauto: 1
+  field_add_all_areas:
+    -
+      value: false
+  field_date:
+    -
+      value: '2024-07-04'
+  field_display_majority_details:
+    -
+      value: true
+  field_display_map:
+    -
+      value: true
+  field_service_type:
+    -
+      uri: 'http://id.esd.org.uk/service/721'
+      title: 'Election results'
+      options: {  }
+  field_type_of_election:
+    -
+      value: NationalParliamentary
