@@ -454,7 +454,14 @@ function localgov_elections_reporting_page_attachments(array &$attachments) {
  * Implements hook_chart_alter().
  */
 function localgov_elections_reporting_chart_alter(array &$element, $chart_id) {
-  $element['#attached']['library'][] = 'localgov_elections_reporting/charts_overrides';
+  $config_obj = \Drupal::configFactory()->getEditable('views.view.election_results_via_parties');
+  $chart_library = $config_obj->get('display.default.display_options.style.options.chart_settings.library');
+  if ($chart_library == 'highcharts') {
+    $element['#attached']['library'][] = 'localgov_elections_reporting/highcharts_overrides';
+  }
+  elseif ($chart_library == 'chartjs') {
+    $element['#attached']['library'][] = 'localgov_elections_reporting/chartjs_overrides';
+  }
   $element['#attached']['drupalSettings']['localgov_elections_reporting']['parties'] = _localgov_elections_reporting_party_colours();
 }
 
